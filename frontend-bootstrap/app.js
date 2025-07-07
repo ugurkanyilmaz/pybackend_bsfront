@@ -73,6 +73,7 @@ function renderProducts(products) {
     grabCursor: true,
     keyboard: true,
     simulateTouch: true,
+    cssMode: true, // Enable native scroll for better touchpad/trackpad support
   });
 
   setTimeout(() => {
