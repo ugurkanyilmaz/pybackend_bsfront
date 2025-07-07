@@ -1,7 +1,7 @@
 // Auto-detect API URL based on environment
 const API_URL = window.location.hostname === 'localhost' 
   ? 'http://localhost:8000/products'
-  : 'https://YOUR_BACKEND_URL.onrender.com/products'; // Backend Render URL'ini buraya ekleyeceksin
+  : 'https://jewelery-wbda.onrender.com/products'; // Backend Render URL'ini buraya ekleyeceksin
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchProducts();
