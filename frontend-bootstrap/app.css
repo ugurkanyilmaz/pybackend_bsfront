@@ -1,0 +1,172 @@
+.swiper {
+  padding-bottom: 40px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #b6a16b;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 40px;
+  height: 40px;
+  top: 40%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.5rem;
+}
+.swiper-wrapper {
+  align-items: stretch;
+}
+@media (max-width: 991px) {
+  .swiper-slide { max-width: 350px; }
+}
+@media (max-width: 575px) {
+  .swiper-slide { max-width: 95vw; }
+}
+.product-card {
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: none;
+  background: #fafafa;
+}
+.product-img-box {
+  background: #f7f7f7;
+  border-radius: 20px 20px 0 0;
+  padding: 18px 18px 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+.product-img-box img {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+}
+.product-title {
+  font-family: 'Avenir-Book-45', Arial, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+.product-price {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.color-picker .color-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #d9d9d9;
+  margin-right: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: border 0.2s;
+  position: relative;
+}
+.color-picker .color-btn.active {
+  border: 2px solid #E6CA97;
+  box-shadow: 0 0 0 2px #E6CA9733;
+}
+.color-label {
+  font-size: 0.85rem;
+  color: #b6a16b;
+  margin-bottom: 0.2rem;
+}
+.star-rating .stars {
+  color: #E6CA97;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.star-rating .score {
+  color: #444;
+  font-size: 0.95rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.carousel {
+  margin-bottom: 2.5rem;
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('./Fonts/avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-Book-Oblique';
+  src: url('./Fonts/avenir/Avenir-BookOblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: oblique;
+}
+@font-face {
+  font-family: 'Avenir-Book-14';
+  src: url('./Fonts/avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-Book-12';
+  src: url('./Fonts/avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('./Fonts/montserat/Montserrat-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('./Fonts/montserat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.product-list-title {
+  font-family: 'Avenir-Book', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.product-title {
+  font-family: 'Montserrat-Medium', 'Montserrat', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.product-price {
+  font-family: 'Montserrat-Regular', 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.color-label {
+  font-family: 'Avenir-Book', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: #b6a16b;
+  margin-bottom: 0.2rem;
+}
+.star-rating .stars, .star-rating .score {
+  font-family: 'Avenir-Book', Arial, sans-serif;
+  color: #E6CA97;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.star-rating .score {
+  color: #444;
+  font-size: 0.95rem;
+}

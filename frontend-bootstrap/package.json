@@ -1,0 +1,16 @@
+{
+  "name": "jewelry-frontend",
+  "version": "1.0.0",
+  "description": "Jewelry Product Listing Frontend",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server . -p 8080 -o",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
