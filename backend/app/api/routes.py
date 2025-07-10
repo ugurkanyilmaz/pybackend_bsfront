@@ -11,6 +11,10 @@ router = APIRouter()
 _products_cache = None
 _last_gold_price = None
 
+@router.get("/")
+async def root():
+    return {"message": "Jewelry Products API is running"}
+
 async def load_products_with_prices():
    
     global _products_cache, _last_gold_price

@@ -9,12 +9,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function fetchProducts() {
   fetch(API_URL)
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      }
+      return res.json();
+    })
     .then(data => {
-      renderProducts(data.products || data);
+      const products = Array.isArray(data) ? data : (data.products || []);
+      if (products.length === 0) {
+        document.querySelector('#product-swiper').innerHTML = `<div class='text-warning text-center p-4'>Henüz ürün bulunamadı.</div>`;
+        return;
+      }
+      renderProducts(products);
     })
     .catch(err => {
-      document.querySelector('#product-swiper').innerHTML = `<div class='text-danger text-center p-4'>Ürünler yüklenemedi.</div>`;
+      console.error('API Error:', err);
+      document.querySelector('#product-swiper').innerHTML = `<div class='text-danger text-center p-4'>Ürünler yüklenemedi: ${err.message}</div>`;
     });
 }
 
